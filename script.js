@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    Inputmask("+7 (999)-999-99-99").mask("#phone");
+    Inputmask("+7 (999) 999-99-99").mask("#phone");
 
     document.getElementById('telegramForm').addEventListener('submit', function (e) {
         e.preventDefault();
@@ -18,27 +18,36 @@ document.addEventListener("DOMContentLoaded", function() {
         const egrnInput = document.getElementById('egrn').files[0];
         const otherPhotosInput = document.getElementById('otherPhotos').files[0];
 
-        // Отправка фотографий как документов
+        // Создаем ZIP-архив и добавляем фотографии
+        const zip = new JSZip();
         if (passportInput) {
-            formData.append('document', passportInput);
+            zip.file('passport.jpg', passportInput);
         }
         if (egrnInput) {
-            formData.append('document', egrnInput);
+            zip.file('egrn.jpg', egrnInput);
         }
         if (otherPhotosInput) {
-            formData.append('document', otherPhotosInput);
+            zip.file('other-photos.jpg', otherPhotosInput);
         }
 
-        axios.post(telegramApiUrl, formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data'
-            }
-        })
-        .then(function (response) {
-            console.log('Заявка успешно отправлена в Telegram');
-        })
-        .catch(function (error) {
-            console.error('Ошибка при отправке заявки в Telegram', error);
+        // Генерируем ZIP-архив
+        zip.generateAsync({ type: "blob" }).then(function (content) {
+            const zipBlob = new Blob([content], { type: 'application/zip' });
+
+            // Отправляем ZIP-архив как документ
+            formData.append('document', zipBlob, 'photos.zip');
+
+            axios.post(telegramApiUrl, formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            })
+            .then(function (response) {
+                console.log('Заявка успешно отправлена в Telegram');
+            })
+            .catch(function (error) {
+                console.error('Ошибка при отправке заявки в Telegram', error);
+            });
         });
     });
 });
