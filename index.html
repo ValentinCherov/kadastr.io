@@ -19,7 +19,7 @@
       </div>
       <div class="form-group">
           <label for="passport">Фото паспорта с регистрацией:</label>
-          <input type="file" class="form-control mt-2" id="passport" name="passport" accept="image/*" multiple required>
+          <input type="file" class="form-control mt-2" id="passport" name="passport" accept="image/*" capture="environment" multiple required>
       </div>
       <!-- ... Вид работ ... -->
       <div class="vid">
@@ -58,11 +58,11 @@
       <!-- ... Вид работ ... -->
       <div class="mb-3">
           <label for="formFileMultiple">Фото выписки из ЕГРН:</label>
-          <input type="file" class="form-control mt-2" id="egrn" name="egrn" accept="image/*" multiple required>
+          <input type="file" class="form-control mt-2" id="egrn" name="egrn" accept="image/*" capture="environment" multiple required>
       </div>
       <div class="form-group">
           <label for="otherPhotos">Прочие фото:</label>
-          <input type="file" class="form-control mt-2" id="otherPhotos" name="otherPhotos" accept="image/*" multiple required>
+          <input type="file" class="form-control mt-2" id="otherPhotos" name="otherPhotos" accept="image/*" capture="environment" multiple required>
       </div>
       <div class="d-grid gap-2 justify-content-center">
           <div id="success" class="alert alert-success mt-3" role="alert" style="display: none;"></div>
