@@ -38,16 +38,3 @@
   height: 500px;
   margin: auto;
 }
-
-.icon1 {
-  background: url('assets/img/Icon/free-icon-gps-944617.png') no-repeat;
-  background-size: contain;
-  font-size: 30px;
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  width: 30px;
-  height: 31px;
-  text-align: center;
-  color: #3b99e0;
-}
