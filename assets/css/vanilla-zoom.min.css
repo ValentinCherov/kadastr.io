@@ -68,13 +68,13 @@
 }
 
 .address::before {
-  background-image: url('assets/img/Icon/free-icon-location-pin-3179068.png'); /* Путь к иконке */
+  background-image: url('//assets/img/Icon/free-icon-location-pin-3179068.png'); /* Путь к иконке */
 }
 
 .phone::before {
-  background-image: url('assets/img/Icon/free-icon-telephone-5037686.png'); /* Путь к иконке */
+  background-image: url('//assets/img/Icon/free-icon-telephone-5037686.png'); /* Путь к иконке */
 }
 
 .schedule::before {
-  background-image: url('assets/img/Icon/free-icon-schedule-1154553.png'); /* Путь к иконке */
+  background-image: url('//assets/img/Icon/free-icon-schedule-1154553.png'); /* Путь к иконке */
 }
