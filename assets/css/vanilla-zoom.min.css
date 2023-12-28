@@ -33,7 +33,7 @@
   margin-bottom: 5px;
 }
 
-.comInfo{
+.comInfo {
   margin-bottom: 3.5rem;
 }
 
@@ -49,7 +49,7 @@
 .phone,
 .schedule {
   position: relative;
-  padding-left: 30px; /* Расстояние между иконкой и текстом */
+  padding-left: 50px; /* Расстояние между иконкой и текстом */
   margin-bottom: 15px;
   font-size: 16px;
 }
@@ -57,24 +57,38 @@
 .address::before,
 .phone::before,
 .schedule::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px; /* Ширина иконки */
-  height: 20px; /* Высота иконки */
+  width: 30px; /* Ширина иконки */
+  height: 30px; /* Высота иконки */
   background-repeat: no-repeat;
 }
 
 .address::before {
-  background-image: url('//assets/img/Icon/free-icon-location-pin-3179068.png'); /* Путь к иконке */
+  background-image: url("/assets/img/Icon/free-icon-adress-2776064.png"); /* Путь к иконке */
 }
 
 .phone::before {
-  background-image: url('//assets/img/Icon/free-icon-telephone-5037686.png'); /* Путь к иконке */
+  background-image: url("/assets/img/Icon/free-icon-smartphone-7344131.png"); /* Путь к иконке */
 }
 
 .schedule::before {
-  background-image: url('//assets/img/Icon/free-icon-schedule-1154553.png'); /* Путь к иконке */
+  background-image: url("/assets/img/Icon/free-icon-time-3503348.png"); /* Путь к иконке */
+}
+
+/* Общие стили для колонок */
+.column22 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Стили для больших экранов (ширина больше 768px) */
+@media screen and (min-width: 1000px) {
+  .column22 {
+    width: 50%;
+  }
 }
