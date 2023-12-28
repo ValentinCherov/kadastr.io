@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Кадастр+</title>
+    <title>"Кадастр+" кадастровые работы</title>
     <link rel="shortcut icon" href="assets/img/IMG-20230807-WA0027.png" type="image/png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link
@@ -52,6 +52,13 @@
         <div class="collapse navbar-collapse" id="navcol-1">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
+              <span style="color: black;">контакный телефон: +7 964 415-17-89</span>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
               <a class="nav-link" href="#section1">отправить заявку</a>
             </li>
           </ul>
@@ -69,8 +76,8 @@
       >
         <div class="text">
           <h1>Кадастр+</h1>
-          <h2>Выполним кадастровые работы</h2>
-          <h3>Геоданные точно и быстро – наша гордость и забота.</h3>
+          <!-- <h2>Выполним кадастровые работы</h2> -->
+          <h4>Мы команда КАДАСТР+ работаем в сфере кадастровой деятельности с 2015 года по всей Республике Саха (Якутия). Нам доверяют десятки муниципальных образований (организации) и физические лица. Выполним кадастровые работы любой сложности в кратчайшие сроки и с гарантией качества. </h4>
           <button id="scrollButton" class="btn btn-outline-light btn-lg" type="button">
             Отправить заявку
           </button>
@@ -211,10 +218,7 @@
     </section>
     <section
       class="clean-block clean-form dark"
-      style="
-        /*--bs-body-bg: var(--bs-body-bg);*/ /*background: var(--bs-primary);*/ /*color: rgb(33,37,41);*/
-      "
-    >
+      style="/*--bs-body-bg: var(--bs-body-bg);*/ /*background: var(--bs-primary);*/ /*color: rgb(33,37,41);*/">
       <div id="section1" container>
         <div class="block-heading">
           <h2 class="text-info">Отправить заявку</h2>
@@ -247,13 +251,40 @@
             </div>
         </div>
         </form>
-        <div class="map2Gis">
-          <a class="dg-widget-link" href="http://2gis.ru/yakutsk/firm/70000001040045442/center/129.6651077270508,62.71935055621743/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Якутска</a>
-          <div class="dg-widget-link"><a href="http://2gis.ru/yakutsk/center/129.66511,62.719236/zoom/16/routeTab/rsType/bus/to/129.66511,62.719236╎Кадастр+, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Кадастр+, компания</a>
+        <div class="row justify-content-center">
+          <div class="col-md-5 feature-box">
+            <p>
+                <a class="dg-widget-link" 
+                href="http://2gis.ru/yakutsk/firm/70000001040045442/center/129.6651077270508,62.71935055621743/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Якутска</a>
+                <div class="dg-widget-link">
+                  <a href="http://2gis.ru/yakutsk/center/129.66511,62.719236/zoom/16/routeTab/rsType/bus/to/129.66511,62.719236╎Кадастр+, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Кадастр+, компания</a>
+                </div>
+                <script charset="utf-8" src="assets/js/map2gis.js"></script>
+                <script charset="utf-8">new DGWidgetLoader({"borderColor":"#a3a3a3","pos":{"lat":62.71935055621743,"lon":129.6651077270508,"zoom":16},"opt":{"city":"yakutsk"},"org":[{"id":"70000001040045442"}]});</script>
+                <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+            </p>
           </div>
-          <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
-          <script charset="utf-8">new DGWidgetLoader({"borderColor":"#a3a3a3","pos":{"lat":62.71935055621743,"lon":129.6651077270508,"zoom":16},"opt":{"city":"yakutsk"},"org":[{"id":"70000001040045442"}]});</script>
-          <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+          <div class="col-md-5 feature-box">
+            <p>
+              <div class="contact-info">
+                <div class="address">
+                  <p><strong>Адрес:</strong></p>
+                  <p>Намцы, ул. Ильи Винокурова улица, д.3/1</p>
+                </div>
+                <div class="phone">
+                  <p><strong>к.т.:</strong></p>
+                  <p>+7 964 415-17-89</p>
+                  <p>+7 924 172-66-28</p>
+                </div>
+                <div class="schedule">
+                  <p><strong>График работы:</strong></p>
+                  <p>Пн-Пт: с 9.00 - 18.00</p>
+                  <p>Обед: с 13.00 - 14.00</p>
+                  <p>Сб-Вс: выходной, консультация по телефону</p>
+                </div>
+            </div>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -277,3 +308,5 @@
     <script src="assets/js/script.js"></script>
   </body>
 </html>
+
+<!-- https://widgets.2gis.com/js/DGWidgetLoader.js -->
