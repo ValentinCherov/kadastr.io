@@ -33,8 +33,44 @@
   margin-bottom: 5px;
 }
 
-.map2Gis {
-  width: 900px;
-  height: 500px;
-  margin: auto;
+.contact-info {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.address,
+.phone,
+.schedule {
+  position: relative;
+  padding-left: 30px; /* Расстояние между иконкой и текстом */
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.address::before,
+.phone::before,
+.schedule::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Ширина иконки */
+  height: 20px; /* Высота иконки */
+  background-repeat: no-repeat;
+}
+
+.address::before {
+  background-image: url('assets/img/Icon/free-icon-location-pin-3179068.png'); /* Путь к иконке */
+}
+
+.phone::before {
+  background-image: url('assets/img/Icon/free-icon-telephone-5037686.png'); /* Путь к иконке */
+}
+
+.schedule::before {
+  background-image: url('assets/img/Icon/free-icon-schedule-1154553.png'); /* Путь к иконке */
 }
