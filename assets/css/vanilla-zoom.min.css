@@ -68,15 +68,15 @@
 }
 
 .address::before {
-  background-image: url("/assets/img/Icon/free-icon-adress-2776064.png"); /* Путь к иконке */
+  background-image: url("assets/img/Icon/free-icon-adress-2776064.png"); /* Путь к иконке */
 }
 
 .phone::before {
-  background-image: url("/assets/img/Icon/free-icon-smartphone-7344131.png"); /* Путь к иконке */
+  background-image: url("assets/img/Icon/free-icon-smartphone-7344131.png"); /* Путь к иконке */
 }
 
 .schedule::before {
-  background-image: url("/assets/img/Icon/free-icon-time-3503348.png"); /* Путь к иконке */
+  background-image: url("assets/img/Icon/free-icon-time-3503348.png"); /* Путь к иконке */
 }
 
 /* Общие стили для колонок */
