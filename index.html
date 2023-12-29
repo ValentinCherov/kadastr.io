@@ -56,7 +56,7 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <span style="color: black"
-                >контакный телефон: +7 964 415-17-89</span
+                >контакные телефоы: +7 964 415-17-89, +7 924 172-66-28</span
               >
             </li>
           </ul>
@@ -79,7 +79,7 @@
       <section
         class="clean-block clean-hero"
         style="
-          color: rgba(39, 121, 197, 0.91);
+          color: rgba(45, 99, 199, 0.91);
           background: url('assets/img/76187.jpg') no-repeat;
           background-size: cover;
         "
@@ -104,7 +104,7 @@
         </div>
       </section>
     </main>
-    <section class="clean-block features" style="background: #f8f9fa">
+    <section class="clean-block features" style="background: #ffffff">
       <div class="container">
         <div class="block-heading">
           <h2
@@ -295,53 +295,55 @@
             </div>
           </div>
         </form>
-        <div class="row justify-content-center">
-          <div class="column22">
-            <a
-              class="dg-widget-link"
-              href="http://2gis.ru/yakutsk/firm/70000001040045442/center/129.6651077270508,62.71935055621743/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
-              >Посмотреть на карте Якутска</a
-            >
-            <div class="dg-widget-link">
+        <div class="container conMap">
+          <div class="row justify-content-center">
+            <div class="column22">
               <a
-                href="http://2gis.ru/yakutsk/center/129.66511,62.719236/zoom/16/routeTab/rsType/bus/to/129.66511,62.719236╎Кадастр+, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route"
-                >Найти проезд до Кадастр+, компания</a
+                class="dg-widget-link"
+                href="http://2gis.ru/yakutsk/firm/70000001040045442/center/129.6651077270508,62.71935055621743/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
+                >Посмотреть на карте Якутска</a
+              >
+              <div class="dg-widget-link">
+                <a
+                  href="http://2gis.ru/yakutsk/center/129.66511,62.719236/zoom/16/routeTab/rsType/bus/to/129.66511,62.719236╎Кадастр+, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route"
+                  >Найти проезд до Кадастр+, компания</a
+                >
+              </div>
+              <script src="assets/js/map2gis.js"></script>
+              <script charset="utf-8">
+                new DGWidgetLoader({
+                  borderColor: "#a3a3a3",
+                  pos: {
+                    lat: 62.71935055621743,
+                    lon: 129.6651077270508,
+                    zoom: 16,
+                  },
+                  opt: { city: "yakutsk" },
+                  org: [{ id: "70000001040045442" }],
+                });
+              </script>
+              <noscript style="color: #c00; font-size: 16px; font-weight: bold"
+                >Виджет карты использует JavaScript. Включите его в настройках
+                вашего браузера.</noscript
               >
             </div>
-            <script src="assets/js/map2gis.js"></script>
-            <script charset="utf-8">
-              new DGWidgetLoader({
-                borderColor: "#a3a3a3",
-                pos: {
-                  lat: 62.71935055621743,
-                  lon: 129.6651077270508,
-                  zoom: 16,
-                },
-                opt: { city: "yakutsk" },
-                org: [{ id: "70000001040045442" }],
-              });
-            </script>
-            <noscript style="color: #c00; font-size: 16px; font-weight: bold"
-              >Виджет карты использует JavaScript. Включите его в настройках
-              вашего браузера.</noscript
-            >
-          </div>
-          <div class="column22">
-            <div class="contact-info">
-              <div class="address">
-                <p><strong>Адрес:</strong></p>
-                <p>Намцы, ул. Ильи Винокурова улица, д.3/1</p>
-              </div>
-              <div class="phone">
-                <p><strong>к.т.:</strong></p>
-                <p>+7 964 415-17-89</p>
-                <p>+7 924 172-66-28</p>
-              </div>
-              <div class="schedule">
-                <p><strong>График работы:</strong></p>
-                <p>Пн-Пт: с 9.00 - 18.00</p>
-                <p>Обед: с 13.00 - 14.00</p>
-                <p>Сб-Вс: выходной, консультация по телефону</p>
+            <div class="column22">
+              <div class="contact-info">
+                <div class="address">
+                  <p><strong>Адрес:</strong></p>
+                  <p>c.Намцы, ул. Ильи Винокурова улица, д.3/1</p>
+                </div>
+                <div class="phone">
+                  <p><strong>к.т.:</strong></p>
+                  <p>+7 964 415-17-89</p>
+                  <p>+7 924 172-66-28</p>
+                </div>
+                <div class="schedule">
+                  <p><strong>График работы:</strong></p>
+                  <p>Пн-Пт: с 9.00 - 18.00</p>
+                  <p>Обед: с 13.00 - 14.00</p>
+                  <p>Сб-Вс: выходной, консультация по телефону</p>
+                </div>
               </div>
             </div>
           </div>

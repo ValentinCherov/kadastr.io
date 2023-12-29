@@ -13039,7 +13039,7 @@ body {
 }
 @media (min-width: 576px) {
   .clean-block {
-    padding-bottom: 100px;
+    padding-bottom: 1px;
   }
   .clean-block .block-heading {
     padding-top: 80px;
